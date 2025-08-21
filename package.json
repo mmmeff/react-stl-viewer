@@ -1,8 +1,8 @@
 {
-  "name": "react-stl-viewer",
-  "version": "2.5.0",
-  "description": "react component for visualizing 3d models in the browser using three.js",
-  "author": "Gabriel Musat",
+  "name": "@mmmeff/react-stl-viewer",
+  "version": "3.0.0",
+  "description": "react@19 component for visualizing 3d models in the browser using three.js",
+  "author": "Matthew Frey",
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.0",
@@ -63,11 +63,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gabotechs/react-stl-viewer.git"
+    "url": "git+https://github.com/mmmeff/react-stl-viewer.git"
   },
-  "homepage": "https://github.com/gabotechs/react-stl-viewer",
+  "homepage": "https://github.com/mmmeff/react-stl-viewer",
   "maintainers": [
-    "Gabriel Musat (https://github.com/gabotechs)"
+    "Matthew Frey (https://github.com/mmmeff)"
   ],
   "keywords": [
     "stl",
