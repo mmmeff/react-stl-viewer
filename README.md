@@ -1,6 +1,6 @@
-# react-stl-viewer
+# react-19-stl-viewer
 
-React component for visualizing STLs using Three.js.
+React 19 component for visualizing STLs using Three.js.
 
 <p align="center">
     <img src="docs/demo.gif">
@@ -9,13 +9,13 @@ React component for visualizing STLs using Three.js.
 ## Install
 
 ```shell
-npm install --save react-stl-viewer
+npm install --save react-19-stl-viewer
 ```
 
 or
 
 ```shell
-yarn add react-stl-viewer
+yarn add react-19-stl-viewer
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ yarn add react-stl-viewer
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {StlViewer} from "react-stl-viewer";
+import {StlViewer} from "react-19-stl-viewer";
 
 const url = "https://storage.googleapis.com/ucloud-v3/ccab50f18fb14c91ccca300a.stl"
 
@@ -48,9 +48,6 @@ function App() {
 ReactDOM.render(<App/>, document.getElementById('root'));
 ```
 
-## Demo
-
-You can see working the examples from `.storybook/stories` [here](https://gabotechs.github.io/react-stl-viewer)
 
 ## Props
 
