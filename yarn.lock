@@ -2075,6 +2075,51 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mmmeff/react-stl-viewer@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@mmmeff/react-stl-viewer@workspace:."
+  dependencies:
+    "@react-three/fiber": ^9.3.0
+    "@rollup/plugin-commonjs": ^22.0.0
+    "@rollup/plugin-node-resolve": ^13.3.0
+    "@rollup/plugin-typescript": ^8.3.3
+    "@storybook/addon-actions": ^6.5.9
+    "@storybook/addon-essentials": ^6.5.9
+    "@storybook/addon-links": ^6.5.9
+    "@storybook/react": ^6.5.9
+    "@types/jest": ^28.1.1
+    "@types/react": ^19.0.0
+    "@types/react-dom": ^19.0.0
+    "@types/three": ^0.157.0
+    "@typescript-eslint/eslint-plugin": ^5.40.0
+    babel-loader: ^8.2.5
+    eslint: ^8.25.0
+    eslint-config-standard-with-typescript: ^23.0.0
+    eslint-plugin-import: ^2.26.0
+    eslint-plugin-n: ^15.3.0
+    eslint-plugin-promise: ^6.1.0
+    jest: ^28.1.1
+    postcss: ^8.4.14
+    react: ^19.0.0
+    react-dom: ^19.0.0
+    rollup: ^3.2.5
+    rollup-plugin-dts: ^5.0.0
+    rollup-plugin-filesize: ^9.1.2
+    rollup-plugin-peer-deps-external: ^2.2.4
+    rollup-plugin-polyfill-node: ^0.11.0
+    rollup-plugin-postcss: ^4.0.2
+    rollup-plugin-typescript2: ^0.34.1
+    three: ^0.160.0
+    three-stdlib: 2.17.2
+    ts-jest: ^28.0.5
+    typescript: ^4.7.3
+  peerDependencies:
+    react: ">=19.0"
+    react-dom: ">=19.0"
+    three: ">=0.160"
+  languageName: unknown
+  linkType: soft
+
 "@mrmlnc/readdir-enhanced@npm:^2.2.1":
   version: 2.2.1
   resolution: "@mrmlnc/readdir-enhanced@npm:2.2.1"
@@ -13862,51 +13907,6 @@ __metadata:
   checksum: 112178a05b1e0ffeaf5d9fb4e56b4410a34a73adeb04dbf13abdc50d9ac9df2ada83e81485156cca0b3fa296aa3612751b3d6cd13be4464642a43679b819cbc7
   languageName: node
   linkType: hard
-
-"react-stl-viewer@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "react-stl-viewer@workspace:."
-  dependencies:
-    "@react-three/fiber": ^9.3.0
-    "@rollup/plugin-commonjs": ^22.0.0
-    "@rollup/plugin-node-resolve": ^13.3.0
-    "@rollup/plugin-typescript": ^8.3.3
-    "@storybook/addon-actions": ^6.5.9
-    "@storybook/addon-essentials": ^6.5.9
-    "@storybook/addon-links": ^6.5.9
-    "@storybook/react": ^6.5.9
-    "@types/jest": ^28.1.1
-    "@types/react": ^19.0.0
-    "@types/react-dom": ^19.0.0
-    "@types/three": ^0.157.0
-    "@typescript-eslint/eslint-plugin": ^5.40.0
-    babel-loader: ^8.2.5
-    eslint: ^8.25.0
-    eslint-config-standard-with-typescript: ^23.0.0
-    eslint-plugin-import: ^2.26.0
-    eslint-plugin-n: ^15.3.0
-    eslint-plugin-promise: ^6.1.0
-    jest: ^28.1.1
-    postcss: ^8.4.14
-    react: ^19.0.0
-    react-dom: ^19.0.0
-    rollup: ^3.2.5
-    rollup-plugin-dts: ^5.0.0
-    rollup-plugin-filesize: ^9.1.2
-    rollup-plugin-peer-deps-external: ^2.2.4
-    rollup-plugin-polyfill-node: ^0.11.0
-    rollup-plugin-postcss: ^4.0.2
-    rollup-plugin-typescript2: ^0.34.1
-    three: ^0.160.0
-    three-stdlib: 2.17.2
-    ts-jest: ^28.0.5
-    typescript: ^4.7.3
-  peerDependencies:
-    react: ">=19.0"
-    react-dom: ">=19.0"
-    three: ">=0.160"
-  languageName: unknown
-  linkType: soft
 
 "react-use-measure@npm:^2.1.7":
   version: 2.1.7
