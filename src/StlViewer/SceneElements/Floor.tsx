@@ -1,14 +1,16 @@
 import React from 'react'
-import { GroupProps } from '@react-three/fiber'
 
 const BIG_NUM = 2**16
 
-export interface FloorProps extends GroupProps {
+export interface FloorProps {
   visible?: boolean
   width?: number
   length?: number
   noShadow?: boolean
   offset: number
+  position?: [number, number, number]
+  rotation?: [number, number, number]
+  scale?: [number, number, number]
 }
 
 const Floor: React.FC<FloorProps> = (

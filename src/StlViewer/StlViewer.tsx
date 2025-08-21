@@ -43,25 +43,25 @@ const StlViewer: React.FC<StlViewerProps> = (
   }
 
   return (
-        <div {...otherProps}>
-            <ErrorBoundary onError={onError}>
-                <React.Suspense fallback={null}>
-                    <Canvas
-                        shadows
-                        gl={{
-                          preserveDrawingBuffer: true,
-                          shadowMapType: PCFSoftShadowMap,
-                          antialias: true
-                        }}
-                        id={canvasId}
-                        style={{ width: '100%', height: '100%' }}
-                    >
-                        <SceneSetup {...sceneProps}/>
-                        {children}
-                    </Canvas>
-                </React.Suspense>
-            </ErrorBoundary>
-        </div>
+    <div {...otherProps}>
+      <ErrorBoundary onError={onError}>
+        <React.Suspense fallback={null}>
+          <Canvas
+            shadows
+            gl={{
+              preserveDrawingBuffer: true,
+              shadowMapType: PCFSoftShadowMap,
+              antialias: true
+            }}
+            id={canvasId}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <SceneSetup {...sceneProps}/>
+            {children}
+          </Canvas>
+        </React.Suspense>
+      </ErrorBoundary>
+    </div>
   )
 }
 

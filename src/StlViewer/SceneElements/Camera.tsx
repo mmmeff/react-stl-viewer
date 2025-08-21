@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { PerspectiveCameraProps, useThree } from '@react-three/fiber'
+import { useThree } from '@react-three/fiber'
 import { Vector3 } from 'three'
 
 export interface CameraPosition {
@@ -11,9 +11,13 @@ export interface CameraPosition {
 /** @deprecated use {@link CameraPosition} instead */
 export type CameraInitialPosition = CameraPosition
 
-export interface CameraProps extends Partial<PerspectiveCameraProps> {
+export interface CameraProps {
   initialPosition: CameraPosition
   center: [number, number, number]
+  near?: number
+  far?: number
+  fov?: number
+  aspect?: number
 }
 
 function clamp (min: number, value: number, max: number): number {

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Box3, BufferGeometry, DoubleSide, Group, Matrix4, Mesh } from 'three'
-import { GroupProps, MeshProps, MeshStandardMaterialProps, useFrame } from '@react-three/fiber'
+import { useFrame } from '@react-three/fiber'
 
 export interface ModelDimensions {
   boundingRadius: number
@@ -9,13 +9,26 @@ export interface ModelDimensions {
   height: number
 }
 
-export interface Model3DProps extends Omit<GroupProps, 'scale'> {
+export interface Model3DProps {
   scale?: number
   visible?: boolean
   geometry: BufferGeometry
-  meshProps: MeshProps
-  materialProps: MeshStandardMaterialProps
+  meshProps?: {
+    name?: string
+    castShadow?: boolean
+    position?: [number, number, number]
+    rotation?: [number, number, number]
+  }
+  materialProps: {
+    color?: string | number
+    opacity?: number
+    side?: typeof DoubleSide | 0 | 1 | 2
+    wireframe?: boolean
+  }
   onLoaded: (dims: ModelDimensions, mesh: Mesh, group: Group) => any
+  position?: [number, number, number]
+  rotation?: [number, number, number]
+  name?: string
 }
 
 const Model3D: React.FC<Model3DProps> = (
