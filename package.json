@@ -1,6 +1,6 @@
 {
   "name": "react-19-stl-viewer",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "react@19 component for visualizing 3d models in the browser using three.js",
   "author": "Matthew Frey",
   "license": "MIT",
